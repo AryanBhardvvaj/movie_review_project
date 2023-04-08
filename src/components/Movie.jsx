@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import image1 from "./img1.jpg"
+import Todaysmovie from "./TodaysMovie";
+import image1 from "./img1.png"
 import image2 from "./img2.jpg"
 import image3 from "./img3.jpg"
 import image4 from "./img2.jpg"
@@ -18,6 +19,9 @@ function Movie() {
 
   return (
     <div>
+
+    <Todaysmovie/>
+
     <div className="trailer">
     
     <iframe id="ytplayer" type="text/html" width="640" height="360"
@@ -33,14 +37,14 @@ function Movie() {
           if (selectedImage > 0)
             setSelectedImage(selectedImage - 1)
         }}
-      >PREV</button>
+      >PREVIOUS IMAGE</button>
 
       <button class="btn btn-primary" type="button"
         onClick={() => {
           if (selectedImage < allImages.length - 1)
             setSelectedImage(selectedImage + 1)
         }}
-      >NEXT</button>
+      >NEXT IMAGE</button>
      </div> 
 
     </div>
