@@ -105,6 +105,9 @@ form button {
 
 .review{
     display: inline-block;
+    font-family: "McLaren", cursive;
+    display: flex;
+    justify-content: first baseline;
 }
 .trailer{
   display: flex;
@@ -124,4 +127,20 @@ todaysmovie h3{
 
 .all{
   background-color: rgb(235, 216, 249);
+}
+
+
+.images{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.cardg:hover{
+  
+  transform: scale(1.1);  
+  border-color: rgba(216, 108, 108, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+  background-blend-mode: color-burn;
+  transition: all .3s ease;   
 }

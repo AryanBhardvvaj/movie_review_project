@@ -36,13 +36,14 @@ function CreateArea(props) {
           name="title"
           onChange={handleChange}
           value={note.title}
-          placeholder="Title"
+          placeholder="Movie Name"
         />
+        <hr/>
         <textarea
           name="content"
           onChange={handleChange}
           value={note.content}
-          placeholder="Take a note..."
+          placeholder="Your review..."
           rows="3"
         />
         <button onClick={submitNote}>Add</button>
